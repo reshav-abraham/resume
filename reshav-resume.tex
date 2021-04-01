@@ -2,6 +2,7 @@
 
 \usepackage{titlesec}
 \usepackage{titling}
+\usepackage[margin=1in]{geometry}
 
 \titleformat{\section}
 {\huge\bfseries\lowercase}
@@ -9,20 +10,27 @@
 {0em}
 {}[\titlerule]
 
-\titleformat{\subsection}[runin]
+\titleformat{\subsubsection}[runin]
 {\bfseries}
 {}
 {0em}
 {}
+
+\titlespacing{\subsubsection}
+{1em}{0em}{0.70em}
 
 \renewcommand{\maketitle}{
 \begin{center}
 {\huge\bfseries
 \theauthor}
 
-reshavabraam@gmail.com --- reshav-abraham@github --- linkedin
+\vspace{0.3em}
+
+reshavabraham@gmail.com --- reshav-abraham@github --- linkedin
 
 160 Vroom Street, Jersey City
+
+908-731-1426
 	
 \end{center}
 }
@@ -35,7 +43,7 @@ reshavabraam@gmail.com --- reshav-abraham@github --- linkedin
 
 \subsection{Languages}
 
-\subsection{Programming}
+\subsubsection{Programming}
 Python, React, Docker, Kubernetes
 
 \subsection{Markup}
