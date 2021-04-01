@@ -5,10 +5,18 @@
 \usepackage[margin=1in]{geometry}
 
 \titleformat{\section}
-{\huge\bfseries\lowercase}
+{\normalfont\Large\bfseries}
 {}
-{0em}
-{}[\titlerule]
+{1em}
+{}
+% [{\titlerule[0.8pt]}]
+
+\titleformat{\subsection}
+\setlength{\hoffset}{0.35in}
+{\large\bfseries}
+{}
+{}
+{}
 
 \titleformat{\subsubsection}[runin]
 {\bfseries}
@@ -17,20 +25,24 @@
 {}
 
 \titlespacing{\subsubsection}
-{1em}{0em}{0.70em}
+{3em}{0em}{0.70em}
+
+\setlength{\voffset}{-0.35in}
+\setlength{\hoffset}{-0.75in}
+\setlength{\headsep}{5pt}
 
 \renewcommand{\maketitle}{
-\begin{center}
+\begin{document}
 {\huge\bfseries
 \theauthor}
 
-\vspace{0.3em}
+\vspace{0.75em}
 
-reshavabraham@gmail.com --- reshav-abraham@github --- linkedin
+\noindent\hspace{1.75em}reshavabraham@gmail.com --- reshav-abraham@github --- linkedin
 
-160 Vroom Street, Jersey City
+\noindent\hspace{1.75em}160 Vroom Street, Jersey City
 
-908-731-1426
+\noindent\hspace{1.75em}908-731-1426
 	
 \end{center}
 }
@@ -39,14 +51,18 @@ reshavabraham@gmail.com --- reshav-abraham@github --- linkedin
 \author{Reshav Abraham}
 \date{March 29 2021}
 \maketitle
-\section{Technical Skills}
+\section{\underline{Work Experience}}
+\section{\underline{Technical Skills}}
+
 
 \subsection{Languages}
+\vspace{-0.3em}
 
 \subsubsection{Programming}
 Python, React, Docker, Kubernetes
+\vspace{0.3em}
 
-\subsection{Markup}
+\subsubsection{Markup}
 {\LaTeX}, HTML, CSS
 \section{General Skills}
 \section{Job Experience}
