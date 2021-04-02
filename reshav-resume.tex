@@ -1,80 +1,31 @@
-\documentclass{article}
-
-\usepackage{titlesec}
-\usepackage{titling}
-\usepackage[margin=1in]{geometry}
-\usepackage{fontawesome}
-\usepackage{tcolorbox}
-\usepackage{graphicx}
-
-\titleformat{\section}
-{\normalfont\Large\bfseries}
-{}
-{1em}
-{}
-% [{\titlerule[0.8pt]}]
-
-\titleformat{\subsection}
-\setlength{\hoffset}{0.35in}
-{\large\bfseries}
-{}
-{}
-{}
-
-\titleformat{\subsubsection}[runin]
-{\bfseries}
-{}
-{0em}
-{}
-
-\titlespacing{\subsubsection}
-{3em}{0em}{0.70em}
-
-\setlength{\voffset}{-0.35in}
-\setlength{\hoffset}{-0.75in}
-\setlength{\headsep}{5pt}
-
-
+\documentclass[a4paper,11pt]{article}
+\usepackage{wallpaper}
+\usepackage{color}
 
 \begin{document}
-\Huge\vspace{-1.3em}\hspace{-0.30em}\textbf{Reshav Abraham} 
-    \begin{minipage}[t]{0.45\textwidth\hspace{2.75em}} 
-        \small
-        \faEnvelopeO \, reshavabraham@gmail.com
-        
-        \faGithub \, https://github.com/reshav-abraham 
-
-        \faLinkedin \, www.linkedin.com/in/reshav-abraham-ab8016a5/
-
-        \faHome \, 160 Vroom Street, Jersey City
-    \end{minipage}
-
-\vspace{-1.3em}\Large\textbf{Full Stack ML Engineer} 
-
-\vspace{0.3em}\small\textbf{about me} 
-
-\begin{minipage}[t]{0.45\textwidth\hspace{0.5em}}
-I am passionate software engineer interested in Full stack development
-and machine learning. \par
-\end{minipage}
-
-\section{\underline{Work Experience}}
-\section{\underline{Technical Skills}}
-
-\subsection{Languages}
-\vspace{-0.3em}
-
-
-\subsubsection{Programming}
-Python, React, Docker, Kubernetes
-\vspace{0.3em}
-
-\subsubsection{Markup}
-{\LaTeX}, HTML, CSS
-\section{\underline{General Skills}}
-\section{\underline{Certificates}}
-
-
-
-
+\TileSquareWallPaper{4}{TGTamber.png}
+\section*{An example of square tiles}
+\newpage
+\ThisTileWallPaper{0.25\paperwidth}{0.5\paperheight}{TGTamber}
+\section*{An example of changing the aspect ratio of the tiles on this page}
+\newpage
+\ThisCenterWallPaper{1.1}{hya}
+\color{white}
+\section*{Using centered wallpaper here}
+\newpage
+\ThisCenterWallPaper{0.25}{hya}
+\color{black}
+\section*{The default (square-tiled) wallpaper overlayed with a centered on this page}
+\newpage
+\ClearWallPaper
+\section*{The wallpaper removed}
+\newpage
+\ThisURCornerWallPaper{0.25}{TGTamber}
+\ThisLLCornerWallPaper{0.5}{TGTamber}
+\section*{LLCornerWallpaper and URCornerWallpaper }
 \end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
