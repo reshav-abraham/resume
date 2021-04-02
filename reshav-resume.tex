@@ -5,6 +5,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{fontawesome}
 \usepackage{tcolorbox}
+\usepackage{graphicx}
 
 \titleformat{\section}
 {\normalfont\Large\bfseries}
@@ -40,16 +41,26 @@
 
 \vspace{0.75em}
 
-\noindent\hspace{0.0em} \faEnvelopeO \, reshavabraham@gmail.com \, \faGithub \, reshav-abraham@github --- 
+\begin{minipage}{0.6\textwidth}\raggedright
+\noindent\vspace{6.0em}\hspace{0.0em} \faEnvelopeO \, reshavabraham@gmail.com \, \faGithub \, reshav-abraham@github 
 
-\noindent\hspace{0.0em} \faLinkedin \, https://www.linkedin.com/in/reshav-abraham-ab8016a5/
+\noindent\vspace{1.0em}\hspace{0.0em} \faLinkedin \, https://www.linkedin.com/in/reshav-abraham-ab8016a5/
 
 \noindent\hspace{-0.1em} \faHome \, 160 Vroom Street, Jersey City
 
 \noindent\hspace{0em} \faPhone \, 908-731-1426
+\end{minipage}
+\vspace{1.0em}\hspace{4em}\begin{document}
+\noindent\begin{minipage}{0.29\textwidth} % adapt widths of minipages to your needs
+\includegraphics[width=\linewidth]{reshav} % lol replace with better head shot
+\end{minipage}%
+\hfill%
+\end{document}
 	
 \end{center}
 }
+
+
 
 \begin{document}
 \begin {tcolorbox}[width=7.85in, enhanced, interior hidden, boxsep=0pt, left=5pt, right=0pt, top=10pt,]
@@ -57,12 +68,13 @@
 \date{March 29 2021}
 \maketitle
 \end{tcolorbox}
+
+
 \section{\underline{Work Experience}}
 \section{\underline{Technical Skills}}
 
 \subsection{Languages}
 \vspace{-0.3em}
-
 
 
 \subsubsection{Programming}
@@ -73,4 +85,8 @@ Python, React, Docker, Kubernetes
 {\LaTeX}, HTML, CSS
 \section{\underline{General Skills}}
 \section{\underline{Certificates}}
+
+
+
+
 \end{document}
