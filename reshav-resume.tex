@@ -2,45 +2,148 @@
 
 \usepackage{titlesec}
 \usepackage{titling}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontawesome}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+
+\pagenumbering{gobble} 
 
 \titleformat{\section}
-{\huge\bfseries\lowercase}
+{\normalfont\Large\bfseries}
 {}
 {0em}
-{}[\titlerule]
+{}
+% [{\titlerule[0.8pt]}]
 
-\titleformat{\subsection}[runin]
+\titleformat{\subsection}
+\setlength{\hoffset}{0.5em}
+{\large\bfseries}
+{}
+{}
+{}
+
+\titleformat{\subsubsection}[runin]
 {\bfseries}
 {}
 {0em}
 {}
 
-\renewcommand{\maketitle}{
-\begin{center}
-{\huge\bfseries
-\theauthor}
+\titlespacing{\subsubsection}
+{0em}{0em}{0em}
 
-reshavabraam@gmail.com --- reshav-abraham@github --- linkedin
+\setlength{\voffset}{-0.35in}
+\setlength{\hoffset}{-0.75in}
+\setlength{\headsep}{5pt}
 
-160 Vroom Street, Jersey City
-	
-\end{center}
-}
+
 
 \begin{document}
-\author{Reshav Abraham}
-\date{March 29 2021}
-\maketitle
-\section{Technical Skills}
+    \begin{minipage}[t]{5.5in\linewidth}
+    \Huge\vspace{0in}\hspace{-0.30em}\textbf{Reshav Abraham}  
 
-\subsection{Languages}
+    \vspace{0em}\hspace{-0.2em}\Large\textbf{Full Stack ML Engineer} 
 
-\subsection{Programming}
-Python, React, Docker, Kubernetes
+    \vspace{0.5em}\hspace{0em}\small\textbf{about me} 
 
-\subsection{Markup}
-{\LaTeX}, HTML, CSS
-\section{General Skills}
-\section{Job Experience}
-\section{Certificates}
+        \begin{minipage}[t]{0.6\textwidth\hspace{0em}}
+        I am a passionate software engineer interested in Full stack development
+        and machine learning. I have experience building backend API's, training and serving machine learning models, and building frontends \par
+        \end{minipage}
+    \end{minipage}
+    \begin{minipage}[t]{3in\linewidth\hspace{-2.3em}}
+        \small
+        \strut\vspace*{-\baselineskip}\newline\includegraphics[width=1.4in]{reshav}
+
+        \faEnvelopeO \, reshavabraham@gmail.com
+        
+        \faGithub\hspace \, https://github.com/reshav-abraham 
+
+        \faLinkedin \, www.linkedin.com/in/reshav-abraham-ab8016a5
+
+        \faHome \, 160 Vroom Street, Jersey City
+    \end{minipage}
+
+\vspace{1.3em}
+
+\begin{minipage}[t]{0.45\textwidth\hspace{0in}}
+
+    \section{\underline{Work Experience}}
+        \vspace{-0.8em}
+        \subsection{Nlmatics}
+        % bfseries
+        \vspace{-0.5em}\hspace{0.1em}
+        \mdseries\bfseries{NLP Engineer}
+        \vspace{0.1em}
+        
+        \hspace{0.5em}\mdseries\textrm{New York, NY | October 2019 - April 2021}
+
+        \vspace{-0.8em}
+        \begin{minipage}[t]{3.75in\textwidth\hspace{0in}}
+            \vspace{0.3em}
+            \hspace{1em}\textasteriskcentered \, \mdseries\textrm{Improved text indexing from PDF documents to enhance search retrieval quality.}
+            
+            \vspace{0.3em}
+            \hspace{1em}\textasteriskcentered \, \mdseries\textrm{Designed back-end APIs with Python and Swagger.}
+
+            \vspace{0.3em}
+            \hspace{1em}\textasteriskcentered \, \mdseries\textrm{Built out front-end features in React and ANT design.}
+            
+            \vspace{0.3em}
+            \hspace{1em}\textasteriskcentered \, \mdseries\textrm{Lead on-prem installation for clients and deploying on restrictive environments.}
+            
+            \vspace{0.3em}
+            \hspace{1em}\textasteriskcentered \, \mdseries\textrm{Maintained and debugged CI/CD pipelines, with Docker and Kubernetes.}
+        \end{minipage}
+
+        \vspace{0.3em}
+        \subsection{Dell EMC}
+        % bfseries
+        \vspace{-0.5em}\hspace{0.1em}
+        \mdseries\bfseries{Software Intern}
+        \vspace{0.1em}
+        
+        \hspace{0.5em}\mdseries\textrm{Charlotte, NC | May 2017 — August 2017}
+
+        \vspace{-0.4em}
+        \begin{minipage}[t]{3.75in\textwidth\hspace{0in}}
+            \vspace{0.1em}
+            \hspace{1em}\textasteriskcentered \, \mdseries\textrm{Optimized memory usage for enterprise data pipelining software
+            by modeling a regression on real-time memory consumption data
+            using Apache Spark.}
+        \end{minipage}
+
+        \section{\underline{Certificates}}
+        \subsection{Natural Language Processing with Deep Learning}
+
+        \section{\underline{Projects}}
+\end{minipage}
+    \begin{minipage}[t]{3in\linewidth\hspace{0.95in}}
+    \section{\underline{Technical Skills}}
+    \vspace{-0.7em}
+    \subsubsection{Programming}
+    \, Python, JS, Docker, Kubernetes
+    \vspace{0.3em}
+
+    \subsubsection{Frameworks}
+    \, Pytorch, Tensorflow, Swagger, \, \, React
+    \vspace{0.3em}
+
+    \subsubsection{Coud}
+    \, GCP, Azure
+    \vspace{0.3em}
+    
+    \subsubsection{Markup}
+    \, {\LaTeX}, HTML, CSS}
+
+    \vspace{4em}
+    \section{\underline{Education}}
+    \large\bfseries{B.S Computer Engineering}
+
+    \bfseries{Purdue University} 
+
+    \mdseries\textrm{West Lafayette, IN | 2014 — 2018}
+\end{minipage}
+
+
 \end{document}
