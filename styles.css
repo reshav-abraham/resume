@@ -1,0 +1,47 @@
+p {
+	color: rgb(51, 0, 25);	
+	font-family: sans-serif;
+}
+
+.page {
+    font-size: 12pt; 
+    height: 900px;  /* You'll need to play with this value */
+	width: 700px;
+    page-break-after: always; /* Always insert page break after this element */
+    page-break-inside: avoid; /* Please don't break my page content up browser */
+	/* border: 2px solid red; */
+	position: absolute; top: 0; left: 0; height: 1210px; width: 1000px;
+}
+
+.bio {
+	font-size: 12px;
+	width: 50%;
+	display: inline-block;
+}
+
+.skills {
+	font-size: 12px;
+	color: black;
+	display: inline-block;
+}
+
+.top-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.resume-body {
+	background: #fafafa;
+}
+
+.body-header {
+	background: #fff0f5;
+	border-radius: 4px; 
+	padding: 4px;
+}
+
+.row {
+	display: flex;
+/*	justify-content: space-between;*/
+	align-items: center;
+}
