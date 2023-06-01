@@ -3,6 +3,16 @@ p {
 	font-family: sans-serif;
 }
 
+span {
+	font-family: Poppins;
+	font-size: 14px;
+}
+
+li {
+	font-family: Poppins;
+	font-size: 14px;
+}
+
 .page {
     font-size: 12pt; 
     height: 900px;  /* You'll need to play with this value */
@@ -32,6 +42,7 @@ p {
 
 .resume-body {
 	background: #fafafa;
+	border-radius: 16px;
 }
 
 .body-header {
