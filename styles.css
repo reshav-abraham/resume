@@ -62,7 +62,7 @@ p {
 span {
 	font-family: Poppins;
 	font-size: 13px;
-	line-height: 1.24;
+	line-height: 1.18;
 }
 
 i {
@@ -80,7 +80,7 @@ i {
 li {
 	font-family: Poppins;
 	font-size: 13px;
-	line-height: 1.24;
+	line-height: 1.18;
 }
 
 .page {
@@ -118,6 +118,8 @@ ul {
 .resume-body {
 	background: #FAF6FD;
 	border-radius: 16px;
+	padding: 18px 20px;
+	box-sizing: border-box;
 }
 
 .body-header {
