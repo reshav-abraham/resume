@@ -18,13 +18,17 @@ li {
 }
 
 .page {
-    font-size: 12pt; 
-    height: 900px;  /* You'll need to play with this value */
-	width: 700px;
+    font-size: 12pt;
+    width: 8.5in;
+    min-height: 11in;
+    box-sizing: border-box;
     page-break-after: always; /* Always insert page break after this element */
     page-break-inside: avoid; /* Please don't break my page content up browser */
-	/* border: 2px solid red; */
-	position: absolute; top: 0; left: 0; height: 1210px; width: 1000px;
+}
+
+ul {
+	margin: 0;
+	padding-left: 18px;
 }
 
 .bio {

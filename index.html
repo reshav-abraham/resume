@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshav Abraham - Resume</title>
     <style>
     body {
-        height: 842px;
-        width: 595px;
-        /* to centre page on screen*/
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0;
+    }
+    @media screen {
+      body {
+        background: #e8e8e8;
+      }
+      .page {
+        margin: 20px auto;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      }
+    }
+    @page {
+      size: letter;
+      margin: 0;
     }
     </style>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Laila:wght@400;600;700&family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -24,12 +37,12 @@
         <span style="font-size: 28px;white-space: nowrap;font-family: Bodoni Moda;padding-left: 20px; color: black; border-radius: 20px; margin-top: -14px; margin-bottom: 12px;">Full Stack Software Engineer</span>
         <div style="font-size:12px; display: flex; flex-flow: row; margin-top:-43px; margin-right: 48px;">
           <div style="display: flex; flex-flow:column; padding-right: 10px;">
-            <span><i style="padding-right: 4px;" class="fa">&#xf003;</i>reshavabraham@gmail.com</span>
-            <span><i style="padding-right: 4px;" class="fa">&#xf09b;</i>reshav-abraham</span>
-            <span><i style="padding-right: 4px;" class="fa">&#xf08c;</i>reshav-abraham</span>
+            <span><i style="padding-right: 4px;" class="fa">&#xf003;</i><a href="mailto:reshavabraham@gmail.com" style="color: inherit; text-decoration: none;">reshavabraham@gmail.com</a></span>
+            <span><i style="padding-right: 4px;" class="fa">&#xf09b;</i><a href="https://github.com/reshav-abraham" style="color: inherit; text-decoration: none;">reshav-abraham</a></span>
+            <span><i style="padding-right: 4px;" class="fa">&#xf08c;</i><a href="https://www.linkedin.com/in/reshav-abraham" style="color: inherit; text-decoration: none;">reshav-abraham</a></span>
           </div>
           <div style="display: flex; flex-flow:column;">
-            <span><i style="padding-right: 4px;" class="fa">&#xf095;</i>(908)-731-1426</span>
+            <span><i style="padding-right: 4px;" class="fa">&#xf095;</i><a href="tel:+19087311426" style="color: inherit; text-decoration: none;">(908)-731-1426</a></span>
             <div style="display: flex; flex-direction: column; margin-top: 2px;">
               <span><i style="padding-right: 4px;" class="fa">&#xf015;</i>156 Allen street,</span>
               <span>New York, New York, 10002</span>
@@ -41,13 +54,13 @@
       <div style="display: flex; flex-flow: row; padding-left: 10px; padding-top: 10px;">
         <div class="bio" style="display: flex; flex-direction: column; padding: 2px; border-radius: 2px;">
           <span style="padding-left: 6px; font-size: 18px; font-family: Laila;"><b>About me</b></span>
-          <span style="padding-left: 10px;">Passionate software engineer with 4 years of experience in Full Stack Development. Experience building backend API’s, Front-ends, and deploying Production grade features. 
+          <span style="padding-left: 10px;">Passionate software engineer with 4 years of experience in Full Stack Development. Experience building backend APIs, Front-ends, and deploying Production grade features.
             Experience with training and serving Machine Learning models. 
           Persistent worker with a positive attitude and always looking for a new challenge.</span>
         </div>
         <div class="skills" style="display: flex; flex-direction: column; margin-left: 42px; border-radius: 2px;">
           <span style="margin-left: -6px; font-size: 18px; font-family: Laila;"><b>Technical Skills</b></span>
-          <div style="display: flex; flex-direction: column; font-size: 17px;">
+          <div style="display: flex; flex-direction: column; font-size: 12px;">
             <div style="display: flex; flex-direction: column;">
               <div><span style="font-weight: 18px; font-weight: bold;">Languages</span><span style="padding-left: 8px;">Python, Javascript, Java, Bash</span></div>
               <div><span style="font-weight: 18px; font-weight: bold;">Frameworks</span><span style="padding-left: 8px;">React, Django, Pytorch, Tensorflow, React Native</span></div>
@@ -62,106 +75,114 @@
         </div>
       </div>
         <div style="display: flex; flex-direction: row;">
-            <div style="display: flex; flex-direction: column; width: 50%; margin-top: -35px;">
+            <div style="display: flex; flex-direction: column; flex: 0 0 58%; box-sizing: border-box; margin-top: -35px;">
               <span style="padding-left: 20px; font-size: 18px; font-family: Laila;"><b>Work Experience</b></span>
-                <div style="font-size: 18px; padding-left: 24px; width: 500px;">
+                <div style="font-size: 12px; padding-left: 24px;">
                   <div style="display: flex; flex-flow:column;">
                   <span style="font-family: Bodoni Moda; font-weight: bold; font-size: 18px;">Narmi</span>
-                  <div style="display: flex;"><b>Software Engineer</b> <span style="padding-left: 5px; padding-bottom: 5px;">New York, NY</span><span style="padding-left: 85px;"> May 2021 - Present</span></div>
-                  <div style="margin-bottom: 10px;"><span>Narmi is a medium sized startup that has been around for 6 years that offers digital account opening and digital banking to 
+                  <div style="display: flex; justify-content: space-between;"><span><b>Software Engineer</b> <span style="padding-left: 5px;">New York, NY</span></span><span>May 2021 - Present</span></div>
+                  <div style="margin-bottom: 6px;"><span>Narmi is a medium sized startup that has been around for 6 years that offers digital account opening and digital banking to
                     mid-tier credit unions and banks.
                   </span></div>
                   </div>
-                  <li style="margin-bottom: 5px;">Integrated multiple banking cores which has helped the company grow and expand its customer base.</li>
-                  <li style="margin-bottom: 5px;">Managed expectations with implementation team to provide clients realistic and accurate timelines.</li>
-                  <li style="margin-bottom: 5px;">Contributed to Narmi's Design System. This is an open source project
-                    consisting of front-end design components using React and SASS. https://github.com/narmi/design_system
+                  <ul>
+                  <li style="margin-bottom: 3px;">Integrated multiple banking cores which has helped the company grow and expand its customer base.</li>
+                  <li style="margin-bottom: 3px;">Managed expectations with implementation team to provide clients realistic and accurate timelines.</li>
+                  <li style="margin-bottom: 3px;">Contributed to Narmi's Design System. This is an open source project
+                    consisting of front-end design components using React and SASS. <a href="https://github.com/narmi/design_system">https://github.com/narmi/design_system</a>
                   </li>
                   <li>Integrated with multiple third party APIs for check images and E-Statements. These APIs required knowledge of cryptography and strong networking skills.</li>
-                  <li>Worked as on On-Call engineer to respond immediately to incidents and monitor spikes in errors on Production Environments</li>
+                  <li>Worked as an On-Call engineer to respond immediately to incidents and monitor spikes in errors on Production Environments.</li>
+                  </ul>
                 </div>
                 <br />
-                <div style="font-size: 18px; padding-left: 24px;">
+                <div style="font-size: 12px; padding-left: 24px;">
                   <div style="display: flex; flex-flow:column;">
                   <span style="font-family: Bodoni Moda; font-weight: bold; font-size: 18px;">NLmatics</span>
-                  <div style="display: flex;"><b>NLP Engineer</b> <span style="padding-left: 5px; padding-bottom: 5px;">New York, NY</span> <span style="padding-left: 85px;">July 2019 - April 2021</span></div>
+                  <div style="display: flex; justify-content: space-between;"><span><b>NLP Engineer</b> <span style="padding-left: 5px;">New York, NY</span></span><span>July 2019 - April 2021</span></div>
                   </div>
-                  <div style="margin-bottom: 10px;"><span>NLmatics is an early stage startup that specialized in semantic document search. The product was used for analyzing
+                  <div style="margin-bottom: 6px;"><span>NLmatics is an early stage startup that specialized in semantic document search. The product was used for analyzing
                     Offering Memorandums for real estate and financial research documents.
                   </span></div>
-                  <li style="margin-bottom: 5px;">Developed a service to parse and index PDF documents with high fidelity. 
-                    Implemented and tested document layout analysis algorithms to improve the classification of header, paragraph, and table text. 
+                  <ul>
+                  <li style="margin-bottom: 3px;">Developed a service to parse and index PDF documents with high fidelity.
+                    Implemented and tested document layout analysis algorithms to improve the classification of header, paragraph, and table text.
                     This significantly improved the search quality of the product.</li>
-                  <li style="margin-bottom: 5px;">Lead On-Prem installations for clients and customized deployments for restrictive environments. 
+                  <li style="margin-bottom: 3px;">Led On-Prem installations for clients and customized deployments for restrictive environments.
                     Prepared installations by simulating client environments. Designed deployment scripts for regular updates and roll-outs.
                   </li>
-                  <li style="margin-bottom: 5px;">
-                    Designed Implemented a Search Flagging and Approval System to track regressions and improvements in search quality. 
+                  <li style="margin-bottom: 3px;">
+                    Designed and implemented a Search Flagging and Approval System to track regressions and improvements in search quality.
                     This guided the development when testing new changes to the Search Engine pipeline.
                   </li>
+                  </ul>
                 </div>
-                <div style="font-size: 18px; padding-left: 24px;  padding-top: 10px; padding-bottom: 10px; width: 520px;">
+                <div style="font-size: 12px; padding-left: 24px;  padding-top: 10px; padding-bottom: 10px;">
                   <div style="display: flex; flex-flow:column;">
                     <span style="font-family: Bodoni Moda; font-weight: bold; font-size: 18px;">Dell EMC</span>
-                  <div style="display: flex;"><b>Software Intern</b> <span style="padding-left: 5px; padding-bottom: 5px;">Charlotte, NC</span><span style="padding-left: 60px;">May 2017 — August 2017</span></div>
+                  <div style="display: flex; justify-content: space-between;"><span><b>Software Intern</b> <span style="padding-left: 5px;">Charlotte, NC</span></span><span>May 2017 — August 2017</span></div>
                   </div>
+                  <ul>
                   <li>Extrapolated memory usage for enterprise data pipelining software by modeling a regression on real-time memory consumption data using Apache Spark.</li>
+                  </ul>
                 </div>
               </div>
-              <div>
-                <div style="padding-left: 52px; padding-top: 10px; display: flex; flex-direction: column; width: 400px; font-size: 18px;">
+              <div style="flex: 0 0 42%; box-sizing: border-box; min-width: 0;">
+                <div style="padding-left: 52px; padding-top: 10px; display: flex; flex-direction: column; font-size: 12px;">
                   <span style="font-size: 18px; font-family: Laila;"><b style="margin-left: -6px;">Education</b></span>
                   <b >B.S. Computer Engineering</b>
                   <b >Purdue University</b>
                   <div><span>West Lafayette</span><span style="padding-left: 25px;"> August 2014 - December 2018</span></div>
                   <div style="display: flex; flex-direction: column; padding-top: 10px;">
                       <span style="font-weight: bold;">Multi-core Processor System Verilog</span>
-                      <li>Implemented a synthesizable multi-core processor for processing MIPS assembly language in SystemVerilog.</li>
+                      <ul><li>Implemented a synthesizable multi-core processor for processing MIPS assembly language in SystemVerilog.</li></ul>
                   </div>
                   <div style="display: flex; flex-direction: column; padding-top: 10px;">
                     <span style="font-weight: bold;">Automated Nerf-Gun Turret</span>
+                    <ul>
                     <li>Engineered a turret gun with 3D printed parts, STM32F407VGT7, and Raspberry pi. The turret gun was controllable with a Wii nunchuck and could detect and shoot human targets with a nerf dart.</li>
                     <li>Implemented human-target detection and tracking with MobileNetSSD and OpenCV.</li>
+                    </ul>
                   </div>
-                </div>
-                <div>
                 </div>
                 <div style="display: flex; flex-direction: column; padding-left: 52px; padding-top: 20px;">
                   <span style="font-size: 18px; font-family: Laila;"><b style="margin-left: -6px">Projects</b></span>
-                  <div style="margin-bottom:10px;">
+                  <div style="margin-bottom:6px;">
                     <b style=" padding-bottom: 20px;">Spotify Playlist Maker</b>
-                    <div style="font-size: 18px;">
+                    <ul style="font-size: 12px;">
                       <li>Implemented a web scraper to scrape Artist data based on genre on Band Camp.</li>
                       <li>Leveraged Spotify's API to search scraped artists and build playlists.</li>
-                    </div>
+                    </ul>
                   </div>
-                  <div style="margin-bottom:10px;">
+                  <div style="margin-bottom:6px;">
                     <b style=" padding-bottom: 20px;">Voice Detection </b>
-                    <div style="font-size: 18px;">
+                    <ul style="font-size: 12px;">
                       <li>Developed a neural network architecture using CNN and linear layers for processing audio signals to identify human voices.</li>
                       <li>Developed a script for scraping audio from YouTube playlists.</li>
-                      <li syle="padding-bottom:20px;">Utilized MFCC and Signal Processing techniques to prepare data.</li>
-                    </div>
+                      <li style="padding-bottom:20px;">Utilized MFCC and Signal Processing techniques to prepare data.</li>
+                    </ul>
                   </div>
                   <div>
                     <span style="font-size: 18px; font-family: Laila; padding-top: 10px;"><b style="margin-left: -6px">Volunteering</b></span>
-                    <div style="display: flex; flex-direction: column; font-size: 18px;margin-bottom: 10px;">
+                    <div style="display: flex; flex-direction: column; font-size: 12px;margin-bottom: 6px;">
                       <div><b>Marcy Lab Volunteer</b><span style="padding-left: 65px;">November 2022 - Present</span></div>
+                      <ul>
                       <li>Mentored a Marcy Lab student for starting a career in Software.</li>
                       <li>Scheduled in person working sessions to develop the student's skills in software.</li>
+                      </ul>
                     </div>
                     <span style="font-size: 18px; font-family: Laila;"><b style="margin-left: -6px;">Certificates</b></span>
-                    <div style="display: flex; flex-direction: column; font-size: 18px;">
+                    <div style="display: flex; flex-direction: column; font-size: 12px;">
                       <div><b>Stanford University, CS224N</b></div>
+                      <ul>
                       <li style="margin-right:42px;">Developed a Neural Machine Language Translation model in PyTorch.</li>
                       <li style="margin-right:42px;">Implemented Encoder and Decoder networks using LSTM and CNN layers for processing out-of-vocabulary words.</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
           </div>
-      <div>
-      </div>
     </div>
     </div>
   </body>
