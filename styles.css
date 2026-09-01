@@ -62,7 +62,7 @@ p {
 span {
 	font-family: Poppins;
 	font-size: 13px;
-	line-height: 1.28;
+	line-height: 1.24;
 }
 
 i {
@@ -80,7 +80,7 @@ i {
 li {
 	font-family: Poppins;
 	font-size: 13px;
-	line-height: 1.28;
+	line-height: 1.24;
 }
 
 .page {
@@ -88,7 +88,7 @@ li {
     width: 8.5in;
     min-height: 11in;
     box-sizing: border-box;
-    padding: 24px 28px;
+    padding: 18px 24px;
     page-break-after: always; /* Always insert page break after this element */
     page-break-inside: avoid; /* Please don't break my page content up browser */
 }
